@@ -37,7 +37,7 @@ public class Exam13 {
       }
       Member m = (Member)other;
 
-      if (!this.name.equals(m.name)) { //문자열
+      if (!this.name.equals(m.name)) { //문자열 비교는 == 대신 equals로!
         return false;
       }
       if (this.age != m.age) {
@@ -94,9 +94,7 @@ public class Exam13 {
 - 같은 key라는 조건?
   1) 인스턴스가 다르더라도 hashCode()의 값이 같아야 한다.
   2) 인스턴스가 다르더라도 equals()의 값이 같아야 한다.
-  -이 예제에서는 
-
-
-
+  -이 예제에서는 MyKey 클래스가 hashCode()와 equals()를
+  재정의하지 않았기 때문에, 같은 내용이더라도 다른 키로 취급된다.
 
 */

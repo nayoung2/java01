@@ -1,4 +1,5 @@
 // 주제: Collection API - 해시코드와 HashSet
+//=> hashCode(), equals() 재정의한 후
 package step21;
 
 import java.util.HashSet;
@@ -72,8 +73,8 @@ public class Exam11 {
     set.add(new Member("홍길동", 20));
     set.add(new Member("임꺽정", 30));
     set.add(new Member("유관순", 16));
-    set.add(new Member("홍길동", 20)); // 저장 거부한다. 비록 인스턴스는 다르지만, 같다고 결론남.
-    set.add(new Member("임꺽정", 30)); // 저장 거부다.ㅡㅡ. 비록 인스턴스는 //, 내용은 같음.
+    set.add(new Member("홍길동", 20)); // 저장 거부! 비록 인스턴스는 다르지만, 같다고 결론남.
+    set.add(new Member("임꺽정", 30)); // 저장 거부! 비록 인스턴스는 다르지만, 내용은 같음.
 
     printList(set);
 

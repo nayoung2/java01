@@ -51,7 +51,7 @@ public class Exam12 {
     Member m2 = new Member("임꺽정", 30);
     Member m3 = new Member("유관순", 16);
 
-    // HashMap<키,값>map; // key는 String이나 int를 주로 사용한다.
+    // HashMap<키,값> map; // key는 String이나 int를 주로 사용한다.
     HashMap<String,Member> map = new HashMap<>();
     map.put(k1, m1);
     map.put(k2, m2);

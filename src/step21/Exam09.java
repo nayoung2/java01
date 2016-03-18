@@ -1,4 +1,4 @@
-// 주제: Collection API - List vs Set memememememeememmeemmeememememeeeemem
+// 주제: Collection API - List vs Set
 package step21;
 
 import java.util.ArrayList;
