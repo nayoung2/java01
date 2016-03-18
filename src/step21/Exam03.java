@@ -52,7 +52,16 @@ public class Exam03 {
 
     // 정렬 전
     printList(list);
-
+/*
+111
+aaa
+444
+BBB
+222
+333
+aab
+aAc
+*/
     // 정렬
     //list.sort(정렬을 판단하는 객체(=Comparator객체));
     MyComparator comp = new MyComparator();
@@ -61,6 +70,15 @@ public class Exam03 {
 
     // 정렬 후
     printList(list);
-
+/*
+111
+222
+333
+444
+aaa
+aab
+aAc
+BBB
+*/
   }
 }

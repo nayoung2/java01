@@ -37,7 +37,7 @@ public class Exam06 {
       public int compare(String s1, String s2) {
         return s1.toLowerCase().compareTo(s2.toLowerCase());
         }
-      }); // 1~2개의 메서드를 재정의할 때.
+      }); // 1~2개의 메서드를 재정의할 때, 즉 짧을 때 이러한 방식으로 익명 로컬 중첩 클래스를 사용한다.
 
 
     // 정렬 후

@@ -17,7 +17,7 @@ public class Exam02 {
     System.out.println(list.indexOf(new String("임꺽정")));  // OK 주소가 아니라 그 안의 내용을 비교
 
     System.out.println("홍길동" == new String("홍길동")); // 서로 다른 레퍼런스. => false
-    System.out.println(list.contains(new String("홍길동"))); // 레퍼런스 주소가 다름에도 불구하고 내용이 같기때문에 정확히 찾아낸다.
+    System.out.println(list.contains(new String("홍길동"))); // 레퍼런스 주소가 다름에도 불구하고 내용이 같기때문에 정확히 찾아낸다. //true
                                                              // 내용이 같은지 비교
 
     ArrayList<Object> list2 = new ArrayList<>();

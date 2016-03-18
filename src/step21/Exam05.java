@@ -13,6 +13,7 @@ public class Exam05 {
       System.out.println(element);
     }
   }
+  
   public static void main(String[] args) {
     // main() 메서드에서만 사용할 클래스라면, 로컬 중첩 클래스로 만들어라!
     class MyComparator implements Comparator<String> {

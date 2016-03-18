@@ -15,7 +15,7 @@ public class Exam08 {
     }
   }
 
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) throws Exception { // Exception 오류 JVM에게 미뤄버린다....
     ConcurrentLinkedDeque<String> list = new ConcurrentLinkedDeque<>();
     list.add("111");
     list.add("aaa");
@@ -27,6 +27,15 @@ public class Exam08 {
     list.add("aAc");
 
     printList(list);
-
+/*
+111
+aaa
+444
+BBB
+222
+333
+aab
+aAc
+*/
   }
 }
