@@ -1,0 +1,6 @@
+ABC
+abs
+가각간
+똘똠똡똣똥
+엔터 = 0A => carrage return
+      0D => Line Feed
