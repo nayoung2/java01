@@ -1,4 +1,4 @@
-// 주제 : 현재 폴더 및 하위 폴더까지 뒤져서 .class
+// 주제 : 현재 폴더 및 하위 폴더까지 뒤져서 .class 파일의 이름을 출력하라.
 package step22.exam01;
 
 import java.io.File;

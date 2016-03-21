@@ -1,4 +1,4 @@
-// 주제 : .txt 확장자를 갖는 파일만 출력하라!
+// 주제 : .txt 확장자를 갖는 파일명만 출력하라!
 package step22.exam01;
 
 import java.io.File;
