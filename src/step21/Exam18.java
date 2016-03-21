@@ -54,13 +54,14 @@ public class Exam18 {
 
 
     //맵에서 값 목록을 꺼낸다.
-    Set<String> keys = map.keySet(); //API keySet()의 리턴타입은 Set
+    Set<String> keys = map.keySet(); // API keySet()의 리턴타입은 Set, values()의 리턴타입은 Collection
+    // => why? key는 중복이 불가능하기 때문에 중복이 불가능한 Set으로,
+    // value는 중복이 가능하기 때문에 중복이 가능한 Collection으로 리턴한다.
 
     for (String key : keys) {
-      System.out.printf("%s\n", key); //
+      System.out.printf("%s - %s\n", key, map.get(key));
     }
-
-}
+  }
 }
 
 
