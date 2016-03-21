@@ -65,11 +65,12 @@ public class Test01 {
 }
 /*
 # 파일의 위치 정보 표현
-1) path // File(String pathname)
+1) path // 생성자 File(String pathname) 사용
   - OS의 파일시스템의 경로 정보이다.
   - 예) 윈도 => c:\Program Files\Java\jdk1.8.0_74
   - 예) 리눅스 => /usr/local/jdk1.8.0_74 (항상 root(/)밑에)
-2) URI(uniform Resource Indicator)  // File(URI uri)
+
+2) URI(uniform Resource Indicator)  // 생성자 File(URI uri) 사용
   - 웹 주소 형태로 표현하는 경로 정보이다.
   - 예) 윈도 => file://c:/Program+Files/Java/jdk1.8.0_74 (중간의 공백은 +로 표시)
   - 예) 리눅스 => file:///usr/local/jdk1.8.0_74
@@ -83,6 +84,6 @@ public class Test01 {
       프로토콜://서버주소:포트번호/.../자원경로
       예) http://www.bitcamp.co.kr/board/index.html
     2) URN(uniform Resource Name)
-      예) urn:ISSM:0~~~~~
+      예) urn:ISSN:0167-6423
 
 */

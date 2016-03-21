@@ -12,20 +12,9 @@ public class Test04 {
     File[] files = f.listFiles();
     for(int i = 0; i < files.length; i++ ) {
       if (files[i].isFile()) {
-        System.out.println(files[i]);
+        System.out.println(files[i]); // ./test.txt 경로까지 출력
+        System.out.println(files[i].getName()); // test.txt 파일 이름만 출력
       }
+    }
   }
 }
-}
-
-
-/*
-> touch test02.txt 빈파일 생성
-
-H/W 제조사(Vendor) => OS 규격에 따라 H/W 제어 function들을 만든다 -> function들의 모음 = 라이브러리
-                                                  = Driver
-                    연결
-App <------> File ------- Driver
-                  "Mount"
-
-*/

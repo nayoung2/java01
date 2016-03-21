@@ -1,24 +1,19 @@
 // 주제 : 1에서 10까지 더하기
 package step22.exam01;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.FilenameFilter;
-
 public class Sigma {
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args){
     //1) 반복문 사용
     int sum = 0;
-    for (int i = 1; i <=10; i++ ) {
+    for (int i = 1; i <= 10; i++ ) {
       sum += i;
     }
     System.out.println(sum);
+
     System.out.println("-------------------------");
 
     sum = computeSigma(10);
     System.out.println(sum);
-
-
   }
 
   static int computeSigma(int value) {
@@ -31,7 +26,8 @@ public class Sigma {
     else
     return value + computeSigma(value - 1);
   }
-// 계속 Stack에 Frame(메서드 만을 위한 메모리)이 쌓인다.. 
+
+// 계속 Stack에 Frame(메서드 만을 위한 메모리)이 쌓인다.. => 반복문을 사용할 수 있는 경우엔 반복문을 사용하도록 하자.
 
 }
 

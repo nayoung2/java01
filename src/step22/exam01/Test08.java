@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.FilenameFilter;
 
 public class Test08 {
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args){
       for (String arg : args) {
         File f = new File(arg);
         printFileName(f,".class");
@@ -24,18 +24,19 @@ public class Test08 {
   static void printFileName(File f, String ext) {
     // 만약 f가 파일이면 이름을 검사하고, .class라면 출력한다.
     // 만약 f가 디렉토리라면 디렉토리의 모든 파일 목록을 얻어서 파일 이름을 출력한다.
-    try{
+    // try{
       if(f.isFile()) {
         if (f.getName().endsWith(ext) && f.getName().contains("$")) {
-          System.out.println(f.getCanonicalPath());
+          // System.out.println(f.getCanonicalPath());
+          System.out.println(f.getName());
         }
       } else if(f.isDirectory()){
         for(File file : f.listFiles()) {
           printFileName(file, ext);
         }
       }
-    }catch (IOException e) {
-    }
+    // }catch (IOException e) {
+    // }
   }
 }
 

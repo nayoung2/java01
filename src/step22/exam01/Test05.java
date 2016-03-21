@@ -21,18 +21,9 @@ public class Test05 {
       }
     }
 
-    // 현재 폴더의 파일 이름을 모두 출력한다
-    File[] files = f.listFiles(new MyFilter());
+    File[] files = f.listFiles(new MyFilter()); // 익명 이너클래스로 사용하도록 한다. -> Test0502
     for(File file : files) {
         System.out.println(file.getName());
       }
   }
 }
-
-
-
-/*
-익명 이너클래스로 사용하도록 한다. -> Test0502
-
-
-*/
