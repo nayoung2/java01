@@ -36,7 +36,7 @@ public class Exam11 {
       }
       Member m = (Member)other;
 
-      if (!this.name.equals(m.name)) { //문자열
+      if (!this.name.equals(m.name)) { //문자열의 비교는 == 대신 equals를 사용한다.
         return false;
       }
       if (this.age != m.age) {
