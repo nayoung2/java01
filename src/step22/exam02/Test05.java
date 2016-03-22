@@ -4,7 +4,15 @@ package step22.exam02;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-
+/*
+java01에 exam02.Test05.data 파일생성
+ABC
+abc
+123
+가각간
+똘똠똡똣
+작성후 저장
+*/
 
 public class Test05 {
   public static void main(String[] args) throws IOException{

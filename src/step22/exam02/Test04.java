@@ -1,4 +1,4 @@
-// 주제 : 바이트 출력하기 4- byte배열 중 특정 부분 출력
+// 주제 : 바이트 출력하기 4 - byte배열 중 특정 부분 출력
 package step22.exam02;
 
 import java.io.File;
