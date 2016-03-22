@@ -15,8 +15,9 @@ import java.io.FilenameFilter;
 
 public class Test08 {
   public static void main(String[] args){
-      for (String arg : args) {
-        File f = new File(arg);
+      File f = null;   // 반복문 내에 선언하는 것은 피하자.
+      for (String path : args) {
+        f = new File(path);
         printFileName(f,".class");
       }
   }
@@ -26,7 +27,7 @@ public class Test08 {
     // 만약 f가 디렉토리라면 디렉토리의 모든 파일 목록을 얻어서 파일 이름을 출력한다.
     // try{
       if(f.isFile()) {
-        if (f.getName().endsWith(ext) && f.getName().contains("$")) {
+        if (f.getName().endsWith(ext) && f.getName().contains("$") /*f.getName().indexOf('$') >= 0*/) {
           // System.out.println(f.getCanonicalPath());
           System.out.println(f.getName());
         }
