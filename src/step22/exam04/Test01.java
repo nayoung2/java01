@@ -29,7 +29,7 @@ public class Test01 {
     out.write(math>>16);
     out.write(math>>8);
     out.write(math);
+
     out.close();
   }
-
 }

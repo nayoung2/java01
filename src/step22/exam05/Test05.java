@@ -1,4 +1,4 @@
-// 주제 : 대용량 데이터 읽기 - 버퍼링 데코레이터 사용 후
+// 주제 : 대용량 데이터 읽기 - Java 버퍼링 데코레이터 사용
 package step22.exam05;
 
 import java.io.File;
@@ -6,13 +6,15 @@ import java.io.FileInputStream;
 import java.io.OutputStream;
 import java.io.IOException;
 import java.io.DataInputStream;
+import java.io.BufferedInputStream;
 
 
-public class Test04 {
+
+public class Test05 {
     public static void main(String[] args) throws IOException {
       // 실제 작업을 수행할 객체를 준비한다.
       FileInputStream in0 = new FileInputStream("test.pdf");
-      MyBufferedInputStream in = new MyBufferedInputStream(in0);
+      BufferedInputStream in = new BufferedInputStream(in0);
 
       long start = System.currentTimeMillis();
 
@@ -34,10 +36,15 @@ public class Test04 {
     }
   }
 
+  /*
 
-  //졸령
 
-  // Object => "role" 을 가진다 = "Responsibility"
-  // Object - 문맥에 따라 data/class/instance를 지칭할 수 있다.
-  // Boot Sector => Boot Loader
-  // sector : defalt (512byte)
+
+      X
+     ㅅ                       ㅅ
+     |                        |
+FileInputStream ----> BufferedInputStream   ==== byte[] buf
+     |
+  PDF
+
+  */
