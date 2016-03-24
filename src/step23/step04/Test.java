@@ -23,9 +23,7 @@ public class Test {
         obj = new HelloEn();
       } else if ("jp".equals(lang)) {
       obj = new HelloJp(); // 새로 개편은 HelloJp 사용하기
-
-    }
-      else {
+      } else {
         obj = new Hello();
       }
       //어떤 객체인진 모르겠지만, 그 객체는 Hello의 서브 클래스이기 때문에
