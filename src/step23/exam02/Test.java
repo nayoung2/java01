@@ -3,7 +3,7 @@
 //  => Hello 추상 클래스 작성
 //  => HelloKo, HelloEn을 이 클래스의 서브클래스로 만든다.
 // 2) Hello의 서브 클래스만 사용하려면,
-//    =>
+//    =>레퍼런스 변수를 AbstractHello로 선언하라!
 package step23.exam02;
 
 public class Test {

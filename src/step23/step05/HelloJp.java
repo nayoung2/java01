@@ -8,7 +8,7 @@ public class HelloJp extends ArrayList<String> implements Hello { // => implemen
     this.add("こんにちは。");
     this.add("こんばんは。");
   }
-  
+
   @Override
   public String greet() {
     return this.sayHello(); // 기존 메서드를 손대지 않는다.

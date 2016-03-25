@@ -11,7 +11,7 @@ public class HelloJp extends ArrayList<String> {
   public String sayHello() {
     Calendar cal = Calendar.getInstance();
     int hour = cal.get(Calendar.HOUR);
-    System.out.println(hour);
+    //System.out.println(hour);
     if (hour < 18) {
       return this.get(0);
     } else {
