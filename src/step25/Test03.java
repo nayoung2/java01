@@ -23,7 +23,7 @@ public class Test03 {
   }
   public static void main(String[] args) throws Exception {
     // 1) 클래스 정보를 얻기
-    Class clazz = Class.forName("step25.Test02$Member");    
+    Class clazz = Class.forName("step25.Test03$Member");    
     System.out.println(clazz.getName());
     
     // 2) 인스턴스 생성하기
